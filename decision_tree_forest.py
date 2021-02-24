@@ -17,3 +17,14 @@ les = les.fit(X_train, Y_train)
 
 # score
 print(les.score(X_test, Y_test))
+
+# vytvoření stromu s hloubkou 1
+strom = DecisionTreeClassifier(max_depth=1)
+strom = strom.fit(X_train, Y_train)
+
+# test score jednoho stromu
+print("Score jednoho stromu:", strom.score(X_test, Y_test))
+
+
+
+
